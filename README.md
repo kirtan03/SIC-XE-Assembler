@@ -1,15 +1,19 @@
-Simulator of SIC-XE Assembler which converts assembly code into machine understandable object code.
+# SIC-XE Assembler Simulator
 
-Assembler : Data Structures
-•	CSECTIONS : Vector of control sections structs(csect in the code) .
-•	REGISTER : Contains information of the registers like its numeric equivalent , bool representing whether such register exists or not .
-•	LITTAB : Contains information of literals like its value , address , block number , a bool representing whether the literal exists in literal table or not .
-•	SYMTAB : Contains information of labels like , name , address , block number , bool representing whether the label exists in the symbol table or not , a bool     representing whether label is relative or not .
-•	OPTAB : Contains information of opcode like name , format , a bool representing whether the opcode is valid or not .
+The SIC-XE Assembler Simulator is a program that converts assembly code into machine-readable object code. It provides a tool for understanding and processing assembly language programs.
 
-Steps to COMPILE and EXECUTE the ASSEMBLER :
-Step1 : Open the folder in which you have stored all the files of the assembler using Visual Studio Code text editor.
-Step2 : Run the file pass2.cpp in VSCode.
-•	Test input is given in input.txt file inside the folder. It is given as Figure 2.16 in System Software by Leland L. Beck
-•	The intermediate file is formed in intermediate.txt in the folder 
-•	The object program is formed in object_program.txt in the folder
+## Assembler: Data Structures
+
+- `CSECTIONS`: A vector of control section structs (`csect` in the code).
+- `REGISTER`: Contains information about registers, such as its numeric equivalent and a boolean representing whether such a register exists or not.
+- `LITTAB`: Contains information about literals, including its value, address, block number, and a boolean representing whether the literal exists in the literal table or not.
+- `SYMTAB`: Contains information about labels, including the label's name, address, block number, a boolean representing whether the label exists in the symbol table or not, and a boolean representing whether the label is relative or not.
+- `OPTAB`: Contains information about opcodes, including the opcode's name, format, and a boolean representing whether the opcode is valid or not.
+
+## Steps to Compile and Execute the Assembler
+
+Step 1: Open the folder in which you have stored all the files of the assembler using the Visual Studio Code text editor.
+Step 2: Run the `pass2.cpp` file in Visual Studio Code.
+   - The test input is provided in the `input.txt` file inside the folder (Figure 2.16 in System Software by Leland L. Beck).
+   - The intermediate file is generated as `intermediate.txt` in the folder.
+   - The object program is generated as `object_program.txt` in the folder.
